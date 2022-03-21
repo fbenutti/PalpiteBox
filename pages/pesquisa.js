@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PageTitle from '../components/pageTitle'
 
+
 const Pesquisa = () => {
   const [form, setForm] = useState({
     Nome: '',
