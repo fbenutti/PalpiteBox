@@ -41,15 +41,15 @@ const Pesquisa = () => {
         O restaurante X sempre buscar por atender melhor os seus clientes. <br />
         Por isso estamos sempre abertos a ouvir a sua opinião.
       </p>
-      {!sucess && <div className='mt-6 w-1/5 mx-auto'>
+      {!sucess && <div className='mt-6 w-1/4 mx-auto'>
         <label className='font-bold'>Seu nome:</label>
-        <input className='p-4 block shadow-md bg-blue-100 rounded-lg my-2' placeholder='Nome' type="text" onChange={onChange} name="Nome" value={form.Nome} />
+        <input className='w-full p-4 block shadow-md bg-blue-100 rounded-lg my-2' placeholder='Nome' type="text" onChange={onChange} name="Nome" value={form.Nome} />
         <label className='font-bold'>E-mail:</label>
-        <input className='p-4 block shadow-md bg-blue-100 rounded-lg my-2' placeholder='Email' type="text" onChange={onChange} name="Email" value={form.Email} />
+        <input className='w-full p-4 block shadow-md bg-blue-100 rounded-lg my-2' placeholder='Email' type="text" onChange={onChange} name="Email" value={form.Email} />
         <label className='font-bold'>WhatsApp:</label>
-        <input className='p-4 block shadow-md bg-blue-100 rounded-lg my-2' placeholder='WhatsApp' type="text" onChange={onChange} name="Whatsapp" value={form.Whatsapp} />
-        <label className='font-bold'>Nota:</label>
-        <div className='flex py-6'>
+        <input className='w-full p-4 block shadow-md bg-blue-100 rounded-lg my-2' placeholder='WhatsApp' type="text" onChange={onChange} name="Whatsapp" value={form.Whatsapp} />
+        <label className='font-bold mt-4 block'>Nota para o estabelecimento:</label>
+        <div className='flex pb-6 pt-3'>
           {notas.map(nota => {
             return (
               <label className='block w-1/6 text-left'>
@@ -60,7 +60,7 @@ const Pesquisa = () => {
           })
           }
         </div>
-        <button className='bg-blue-400 px-12 py-4 font-bold rounded-lg shadow-lg hover:shadow'
+        <button className='bg-blue-400 mb-6 px-12 py-4 font-bold rounded-lg shadow-lg hover:shadow'
           onClick={save}>
           Salvar
         </button>
